@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head><body background="visitante.jpg">
+	
+		<title> Cadastrar visitante </title>
+		<header id="cabeçalho" >
+		<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+			<h1>    Condominios </h1>
+		<hgroup>
+		<h2><input type="submit" value="Cadastro" />
+			<input type="submit" value="Dados Adicionais" />	
+			<input type="submit" value="Planos de acesso" />
+			<input type="submit" value="Titular/Dependente"</h2>
+		
+		</hgroup>
+	</head>
+	
+				<br></br>
+				<!-- cadastro de produtos -->
+				<!-- action:chamada de código -->
+				<form name="myform" action="/action_page_post.php"
+				onsubmit="return validateform()" method="post">	
+				
+				<tr>
+				
+					<td><strong>Apartamento</strong>:<input type="text" id="produto" name="fname" value="" size="20" maxlength="15" required /></td>
+					<td><strong>Digital</strong>:<input type="text" id="tipo" name="fname" value="" size="20" maxlength="15" required /><br><p></td>
+					<br>
+					<strong>Nome</strong>:<input type="text" name="fname"  value="" size="20" maxlength="15" required /><br><p>
+					<strong>RG</strong>:<input type="text" id="quantidade" name="fnumber" value="" size="20" maxlength="15" required /><br><p>
+					<strong>CPF</strong>:<input type="text" id="quantidade" name="fnumber" value="" size="20" maxlength="15" required /><br><p>
+					<strong>Data nascimento</strong>:<input type="date" id="quantidade" name="fdate" value="" size="20" maxlength="15" required /><br><p>
+					<td><strong>Data Admissao</strong>:<input type="date" id="tipo" name="fdate" value="" size="20" maxlength="15" required /></td>
+					<td><strong>Data Deslig</strong>:<input type="date" id="tipo" name="fdate" value="" size="20" maxlength="15" required /></td>
+					<strong>Condominio</strong>:<input type="number" id="marca" name="fname" value="" size="20" maxlength="15" required /><br><p>
+					<strong>Bloco</strong>:<input type="number" id="código fabricante" name="fpassaword" value="" size="20" maxlength="15" required /><br><p>
+					<strong>Apartamento</strong>:<input type="number" id="imposto" name="fnumber" value="" size="20" maxlength="15" required /><p>
+					<strong>Responsavel</strong>:<input type="text" id="imposto" name="fname" value="" size="20" maxlength="15" required /><p>
+					<input type="submit" value="salvar" />
+					<input type="submit" value="sair" />
+					</form>
+					</tr>
+					
+
+					 
+				
+					
+					
+
+
+	</body>
+		<footer>
+
+		</footer>
+</html>
