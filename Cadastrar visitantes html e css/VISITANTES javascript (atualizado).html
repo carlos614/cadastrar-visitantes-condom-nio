@@ -5,6 +5,12 @@
 		<title> Cadastrar visitante </title>
 		<header id="cabeçalho" >
 		<script>
+		function myFunction() {
+    confirm("Press a button!");
+}
+		function myFunction() {
+    alert("I am an alert box!");
+}
 function validateForm() {
     var x = document.forms["myForm"]["fname"].value;
     if (x == "") {
@@ -44,8 +50,8 @@ function validateForm() {
 					<strong>Bloco</strong>:<input type="number" id="código fabricante" name="fpassaword" value="" size="20" maxlength="15" required /><br><p>
 					<strong>Apartamento</strong>:<input type="number" id="imposto" name="fnumber" value="" size="20" maxlength="15" required /><p>
 					<strong>Responsavel</strong>:<input type="text" id="imposto" name="fname" value="" size="20" maxlength="15" required /><p>
-					<input type="submit" value="salvar" />
-					<input type="submit" value="sair" />
+					<button onclick="myFunction()">salvar</button>
+					<button onclick="myFunction()">sair</button>
 					</form>
 					</tr>
 					
