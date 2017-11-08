@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 4.3.11
+- http://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: 08-Nov-2017 às 22:45
+- Versão do servidor: 5.6.24
+- PHP Version: 5.6.8
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="wda_crud" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="cadastro">
+                CREATE TABLE `cadastro` (
+                  `Nome` char(30) NOT NULL,
+                  `RG` int(11) NOT NULL,
+                  `CPF` int(11) NOT NULL,
+                  `Data nascimento` date NOT NULL,
+                  `Data Admissao` date NOT NULL,
+                  `Data Deslig.` date NOT NULL,
+                  `Condominio` int(11) NOT NULL,
+                  `Bloco` int(11) NOT NULL,
+                  `Apartamento` int(11) NOT NULL,
+                  `Responsavel` char(30) NOT NULL
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'wda_crud'
+    -->
+    <database name="wda_crud">
+        <!-- Tabela cadastro -->
+    </database>
+</pma_xml_export>
